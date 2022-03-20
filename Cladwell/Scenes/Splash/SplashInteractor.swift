@@ -10,8 +10,15 @@ import UIKit
 
 protocol SplashInteractor: AnyObject {
     var presenter: SplashPresenter? { get set }
+
+    var isLoggedIn: Bool { get }
 }
 
 class SplashInteractorImpl: SplashInteractor {
     var presenter: SplashPresenter?
+
+    var isLoggedIn: Bool {
+        // TODO: Implement actual check func.
+        return true
+    }
 }

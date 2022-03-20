@@ -26,6 +26,7 @@ class ClosetViewControllerImpl: UIViewController {
     }
 
     private func setup() {
+        view.backgroundColor = .accent
     }
 
     private func localize() {

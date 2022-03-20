@@ -18,14 +18,26 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRT-B8-b4K">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wRT-B8-b4K" secondAttribute="trailing" id="CQ4-8f-j8W"/>
+                <constraint firstAttribute="bottom" secondItem="wRT-B8-b4K" secondAttribute="bottom" id="QjQ-3h-cGY"/>
+                <constraint firstItem="wRT-B8-b4K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="h55-jE-ITE"/>
+                <constraint firstItem="wRT-B8-b4K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="is5-cV-ca0"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="152"/>
         </view>
     </objects>
     <resources>
         <namedColor name="BackgroundColor">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96862745098039216" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

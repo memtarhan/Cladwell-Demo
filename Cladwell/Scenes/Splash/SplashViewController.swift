@@ -17,18 +17,11 @@ class SplashViewControllerImpl: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        localize()
-    }
-
-    private func setup() {
-    }
-
-    private func localize() {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter?.present()
     }
 }
 

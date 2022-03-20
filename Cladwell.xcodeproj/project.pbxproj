@@ -44,6 +44,7 @@
 		43BCEA3027E7EF2A00974783 /* ClosetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2A27E7EF2A00974783 /* ClosetEntity.swift */; };
 		43BCEA3127E7EF2A00974783 /* ClosetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BCEA2B27E7EF2A00974783 /* ClosetViewController.xib */; };
 		43BCEA3427E7EFB100974783 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA3327E7EFB100974783 /* UIColor+.swift */; };
+		43BCEA3627E7F27900974783 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA3527E7F27900974783 /* Router.swift */; };
 		809C9527A4169C88A48EB866 /* Pods_CladwellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750EC3AFF45783946C4EFFC8 /* Pods_CladwellTests.framework */; };
 		8EEBDDB5FE725592C4EB3E7A /* Pods_Cladwell_CladwellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93B53B710C8E61BDC62644 /* Pods_Cladwell_CladwellUITests.framework */; };
 		B8B4F3C29D1B19FE32A2FE35 /* Pods_Cladwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */; };
@@ -111,6 +112,7 @@
 		43BCEA2A27E7EF2A00974783 /* ClosetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetEntity.swift; sourceTree = "<group>"; };
 		43BCEA2B27E7EF2A00974783 /* ClosetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosetViewController.xib; sourceTree = "<group>"; };
 		43BCEA3327E7EFB100974783 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		43BCEA3527E7F27900974783 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.debug.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cladwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.release.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,9 +174,9 @@
 		43BCE9BC27E7EA6900974783 /* Cladwell */ = {
 			isa = PBXGroup;
 			children = (
-				43BCEA3227E7EFA200974783 /* Extensions */,
 				43BCE9FE27E7EDFB00974783 /* DI */,
 				43BCE9ED27E7EB3B00974783 /* Scenes */,
+				43BCEA3227E7EFA200974783 /* Extensions */,
 				43BCEA0227E7EE1F00974783 /* Common */,
 				43BCE9BD27E7EA6900974783 /* AppDelegate.swift */,
 				43BCE9C627E7EA6E00974783 /* Assets.xcassets */,
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				43BCEA0327E7EE2900974783 /* ViewControllerFactory.swift */,
+				43BCEA3527E7F27900974783 /* Router.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				43BCEA0427E7EE2900974783 /* ViewControllerFactory.swift in Sources */,
 				43BCE9FA27E7EDC900974783 /* SplashViewController.swift in Sources */,
 				43BCEA0F27E7EE5C00974783 /* LoginRouter.swift in Sources */,
+				43BCEA3627E7F27900974783 /* Router.swift in Sources */,
 				43BCEA1E27E7EEFB00974783 /* DetailsViewController.swift in Sources */,
 				43BCEA1127E7EE5C00974783 /* LoginInteractor.swift in Sources */,
 				43BCEA1D27E7EEFB00974783 /* DetailsRouter.swift in Sources */,
