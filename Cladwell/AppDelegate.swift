@@ -5,32 +5,60 @@
 //  Created by Mehmet Tarhan on 20/03/2022.
 //
 
+import Swinject
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    var assembler: Assembler?
 
-
+    var rootViewController: UIViewController? {
+        get { return window?.rootViewController }
+        set {
+            window?.rootViewController = newValue
+            window?.makeKeyAndVisible()
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        initWindow()
+        initDI()
+        initUI()
+        initNavigationBar()
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    /// - Initializing window
+    private func initWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.overrideUserInterfaceStyle = .light
+        window?.makeKeyAndVisible()
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    /// - Initializing dependency injection
+    private func initDI() {
+        assembler = Assembler([
+            /// - Screens
+            ClosetAssembly(),
+            DetailsAssembly(),
+            LoginAssembly(),
+            SplashAssembly(),
+
+        ])
+        assembler?.apply(assembly: ViewControllerFactoryAssembly(assembler: assembler!))
     }
 
+    /// - Initializing UI w/ initial view controller
+    func initUI() {
+        rootViewController = assembler?.resolver.resolve(SplashViewController.self) as? UIViewController
+    }
 
+    /// - Initializing UINavigationBar
+    private func initNavigationBar() {
+        let appearance = UINavigationBar.appearance()
+        appearance.shadowImage = UIImage()
+        appearance.setBackgroundImage(UIImage(), for: .default)
+        appearance.backgroundColor = .accent
+    }
 }
-

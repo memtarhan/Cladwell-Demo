@@ -8,14 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		43BCE9BE27E7EA6900974783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9BD27E7EA6900974783 /* AppDelegate.swift */; };
-		43BCE9C027E7EA6900974783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9BF27E7EA6900974783 /* SceneDelegate.swift */; };
-		43BCE9C227E7EA6900974783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9C127E7EA6900974783 /* ViewController.swift */; };
-		43BCE9C527E7EA6900974783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9C327E7EA6900974783 /* Main.storyboard */; };
 		43BCE9C727E7EA6E00974783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9C627E7EA6E00974783 /* Assets.xcassets */; };
 		43BCE9CA27E7EA6E00974783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9C827E7EA6E00974783 /* LaunchScreen.storyboard */; };
 		43BCE9D527E7EA6E00974783 /* CladwellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9D427E7EA6E00974783 /* CladwellTests.swift */; };
 		43BCE9DF27E7EA6E00974783 /* CladwellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9DE27E7EA6E00974783 /* CladwellUITests.swift */; };
 		43BCE9E127E7EA6E00974783 /* CladwellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9E027E7EA6E00974783 /* CladwellUITestsLaunchTests.swift */; };
+		43BCE9F827E7EDC900974783 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9F227E7EDC900974783 /* SplashPresenter.swift */; };
+		43BCE9F927E7EDC900974783 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9F327E7EDC900974783 /* SplashRouter.swift */; };
+		43BCE9FA27E7EDC900974783 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9F427E7EDC900974783 /* SplashViewController.swift */; };
+		43BCE9FB27E7EDC900974783 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9F527E7EDC900974783 /* SplashInteractor.swift */; };
+		43BCE9FC27E7EDC900974783 /* SplashEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9F627E7EDC900974783 /* SplashEntity.swift */; };
+		43BCE9FD27E7EDC900974783 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9F727E7EDC900974783 /* SplashViewController.xib */; };
+		43BCEA0127E7EE0B00974783 /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0027E7EE0B00974783 /* SplashAssembly.swift */; };
+		43BCEA0427E7EE2900974783 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0327E7EE2900974783 /* ViewControllerFactory.swift */; };
+		43BCEA0727E7EE3D00974783 /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0627E7EE3D00974783 /* ViewControllerFactoryAssembly.swift */; };
+		43BCEA0E27E7EE5C00974783 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0827E7EE5C00974783 /* LoginPresenter.swift */; };
+		43BCEA0F27E7EE5C00974783 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0927E7EE5C00974783 /* LoginRouter.swift */; };
+		43BCEA1027E7EE5C00974783 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0A27E7EE5C00974783 /* LoginViewController.swift */; };
+		43BCEA1127E7EE5C00974783 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0B27E7EE5C00974783 /* LoginInteractor.swift */; };
+		43BCEA1227E7EE5C00974783 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA0C27E7EE5C00974783 /* LoginEntity.swift */; };
+		43BCEA1327E7EE5C00974783 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BCEA0D27E7EE5C00974783 /* LoginViewController.xib */; };
+		43BCEA1527E7EE6900974783 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA1427E7EE6900974783 /* LoginAssembly.swift */; };
+		43BCEA1C27E7EEFB00974783 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA1627E7EEFB00974783 /* DetailsPresenter.swift */; };
+		43BCEA1D27E7EEFB00974783 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA1727E7EEFB00974783 /* DetailsRouter.swift */; };
+		43BCEA1E27E7EEFB00974783 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA1827E7EEFB00974783 /* DetailsViewController.swift */; };
+		43BCEA1F27E7EEFB00974783 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA1927E7EEFB00974783 /* DetailsInteractor.swift */; };
+		43BCEA2027E7EEFB00974783 /* DetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA1A27E7EEFB00974783 /* DetailsEntity.swift */; };
+		43BCEA2127E7EEFB00974783 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BCEA1B27E7EEFB00974783 /* DetailsViewController.xib */; };
+		43BCEA2327E7EF1500974783 /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2227E7EF1500974783 /* DetailsAssembly.swift */; };
+		43BCEA2527E7EF2000974783 /* ClosetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2427E7EF2000974783 /* ClosetAssembly.swift */; };
+		43BCEA2C27E7EF2A00974783 /* ClosetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2627E7EF2A00974783 /* ClosetPresenter.swift */; };
+		43BCEA2D27E7EF2A00974783 /* ClosetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2727E7EF2A00974783 /* ClosetRouter.swift */; };
+		43BCEA2E27E7EF2A00974783 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2827E7EF2A00974783 /* ClosetViewController.swift */; };
+		43BCEA2F27E7EF2A00974783 /* ClosetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2927E7EF2A00974783 /* ClosetInteractor.swift */; };
+		43BCEA3027E7EF2A00974783 /* ClosetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA2A27E7EF2A00974783 /* ClosetEntity.swift */; };
+		43BCEA3127E7EF2A00974783 /* ClosetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BCEA2B27E7EF2A00974783 /* ClosetViewController.xib */; };
+		43BCEA3427E7EFB100974783 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA3327E7EFB100974783 /* UIColor+.swift */; };
 		809C9527A4169C88A48EB866 /* Pods_CladwellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750EC3AFF45783946C4EFFC8 /* Pods_CladwellTests.framework */; };
 		8EEBDDB5FE725592C4EB3E7A /* Pods_Cladwell_CladwellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93B53B710C8E61BDC62644 /* Pods_Cladwell_CladwellUITests.framework */; };
 		B8B4F3C29D1B19FE32A2FE35 /* Pods_Cladwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */; };
@@ -44,9 +72,6 @@
 		3AB6EE8E31003281991F6012 /* Pods-Cladwell-CladwellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cladwell-CladwellUITests.release.xcconfig"; path = "Target Support Files/Pods-Cladwell-CladwellUITests/Pods-Cladwell-CladwellUITests.release.xcconfig"; sourceTree = "<group>"; };
 		43BCE9BA27E7EA6900974783 /* Cladwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cladwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BCE9BD27E7EA6900974783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43BCE9BF27E7EA6900974783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43BCE9C127E7EA6900974783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43BCE9C427E7EA6900974783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43BCE9C627E7EA6E00974783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BCE9C927E7EA6E00974783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43BCE9CB27E7EA6E00974783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +80,37 @@
 		43BCE9DA27E7EA6E00974783 /* CladwellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CladwellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BCE9DE27E7EA6E00974783 /* CladwellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CladwellUITests.swift; sourceTree = "<group>"; };
 		43BCE9E027E7EA6E00974783 /* CladwellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CladwellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43BCE9F227E7EDC900974783 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		43BCE9F327E7EDC900974783 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		43BCE9F427E7EDC900974783 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		43BCE9F527E7EDC900974783 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		43BCE9F627E7EDC900974783 /* SplashEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEntity.swift; sourceTree = "<group>"; };
+		43BCE9F727E7EDC900974783 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		43BCEA0027E7EE0B00974783 /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
+		43BCEA0327E7EE2900974783 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		43BCEA0627E7EE3D00974783 /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
+		43BCEA0827E7EE5C00974783 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		43BCEA0927E7EE5C00974783 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		43BCEA0A27E7EE5C00974783 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43BCEA0B27E7EE5C00974783 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		43BCEA0C27E7EE5C00974783 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		43BCEA0D27E7EE5C00974783 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		43BCEA1427E7EE6900974783 /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		43BCEA1627E7EEFB00974783 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		43BCEA1727E7EEFB00974783 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		43BCEA1827E7EEFB00974783 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		43BCEA1927E7EEFB00974783 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		43BCEA1A27E7EEFB00974783 /* DetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEntity.swift; sourceTree = "<group>"; };
+		43BCEA1B27E7EEFB00974783 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		43BCEA2227E7EF1500974783 /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
+		43BCEA2427E7EF2000974783 /* ClosetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetAssembly.swift; sourceTree = "<group>"; };
+		43BCEA2627E7EF2A00974783 /* ClosetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetPresenter.swift; sourceTree = "<group>"; };
+		43BCEA2727E7EF2A00974783 /* ClosetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetRouter.swift; sourceTree = "<group>"; };
+		43BCEA2827E7EF2A00974783 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		43BCEA2927E7EF2A00974783 /* ClosetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetInteractor.swift; sourceTree = "<group>"; };
+		43BCEA2A27E7EF2A00974783 /* ClosetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetEntity.swift; sourceTree = "<group>"; };
+		43BCEA2B27E7EF2A00974783 /* ClosetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosetViewController.xib; sourceTree = "<group>"; };
+		43BCEA3327E7EFB100974783 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.debug.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cladwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.release.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +172,11 @@
 		43BCE9BC27E7EA6900974783 /* Cladwell */ = {
 			isa = PBXGroup;
 			children = (
+				43BCEA3227E7EFA200974783 /* Extensions */,
+				43BCE9FE27E7EDFB00974783 /* DI */,
+				43BCE9ED27E7EB3B00974783 /* Scenes */,
+				43BCEA0227E7EE1F00974783 /* Common */,
 				43BCE9BD27E7EA6900974783 /* AppDelegate.swift */,
-				43BCE9BF27E7EA6900974783 /* SceneDelegate.swift */,
-				43BCE9C127E7EA6900974783 /* ViewController.swift */,
-				43BCE9C327E7EA6900974783 /* Main.storyboard */,
 				43BCE9C627E7EA6E00974783 /* Assets.xcassets */,
 				43BCE9C827E7EA6E00974783 /* LaunchScreen.storyboard */,
 				43BCE9CB27E7EA6E00974783 /* Info.plist */,
@@ -144,6 +201,113 @@
 			path = CladwellUITests;
 			sourceTree = "<group>";
 		};
+		43BCE9ED27E7EB3B00974783 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				43BCE9F027E7EDB500974783 /* Closet */,
+				43BCE9F127E7EDBA00974783 /* Details */,
+				43BCE9EE27E7EB5A00974783 /* Login */,
+				43BCE9EF27E7ED9F00974783 /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		43BCE9EE27E7EB5A00974783 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA0C27E7EE5C00974783 /* LoginEntity.swift */,
+				43BCEA0B27E7EE5C00974783 /* LoginInteractor.swift */,
+				43BCEA0827E7EE5C00974783 /* LoginPresenter.swift */,
+				43BCEA0927E7EE5C00974783 /* LoginRouter.swift */,
+				43BCEA0A27E7EE5C00974783 /* LoginViewController.swift */,
+				43BCEA0D27E7EE5C00974783 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		43BCE9EF27E7ED9F00974783 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				43BCE9F627E7EDC900974783 /* SplashEntity.swift */,
+				43BCE9F527E7EDC900974783 /* SplashInteractor.swift */,
+				43BCE9F227E7EDC900974783 /* SplashPresenter.swift */,
+				43BCE9F327E7EDC900974783 /* SplashRouter.swift */,
+				43BCE9F427E7EDC900974783 /* SplashViewController.swift */,
+				43BCE9F727E7EDC900974783 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		43BCE9F027E7EDB500974783 /* Closet */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA2A27E7EF2A00974783 /* ClosetEntity.swift */,
+				43BCEA2927E7EF2A00974783 /* ClosetInteractor.swift */,
+				43BCEA2627E7EF2A00974783 /* ClosetPresenter.swift */,
+				43BCEA2727E7EF2A00974783 /* ClosetRouter.swift */,
+				43BCEA2827E7EF2A00974783 /* ClosetViewController.swift */,
+				43BCEA2B27E7EF2A00974783 /* ClosetViewController.xib */,
+			);
+			path = Closet;
+			sourceTree = "<group>";
+		};
+		43BCE9F127E7EDBA00974783 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA1A27E7EEFB00974783 /* DetailsEntity.swift */,
+				43BCEA1927E7EEFB00974783 /* DetailsInteractor.swift */,
+				43BCEA1627E7EEFB00974783 /* DetailsPresenter.swift */,
+				43BCEA1727E7EEFB00974783 /* DetailsRouter.swift */,
+				43BCEA1827E7EEFB00974783 /* DetailsViewController.swift */,
+				43BCEA1B27E7EEFB00974783 /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		43BCE9FE27E7EDFB00974783 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA0527E7EE3500974783 /* Common */,
+				43BCE9FF27E7EE0000974783 /* Scenes */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		43BCE9FF27E7EE0000974783 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA2427E7EF2000974783 /* ClosetAssembly.swift */,
+				43BCEA2227E7EF1500974783 /* DetailsAssembly.swift */,
+				43BCEA1427E7EE6900974783 /* LoginAssembly.swift */,
+				43BCEA0027E7EE0B00974783 /* SplashAssembly.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		43BCEA0227E7EE1F00974783 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA0327E7EE2900974783 /* ViewControllerFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		43BCEA0527E7EE3500974783 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA0627E7EE3D00974783 /* ViewControllerFactoryAssembly.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		43BCEA3227E7EFA200974783 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43BCEA3327E7EFB100974783 /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B937B271797D3F324E55ECB0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +318,6 @@
 				50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */,
 				741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,9 +441,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BCEA1327E7EE5C00974783 /* LoginViewController.xib in Resources */,
 				43BCE9CA27E7EA6E00974783 /* LaunchScreen.storyboard in Resources */,
+				43BCEA3127E7EF2A00974783 /* ClosetViewController.xib in Resources */,
+				43BCEA2127E7EEFB00974783 /* DetailsViewController.xib in Resources */,
+				43BCE9FD27E7EDC900974783 /* SplashViewController.xib in Resources */,
 				43BCE9C727E7EA6E00974783 /* Assets.xcassets in Resources */,
-				43BCE9C527E7EA6900974783 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +574,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BCE9C227E7EA6900974783 /* ViewController.swift in Sources */,
+				43BCEA1027E7EE5C00974783 /* LoginViewController.swift in Sources */,
+				43BCEA1527E7EE6900974783 /* LoginAssembly.swift in Sources */,
+				43BCEA2F27E7EF2A00974783 /* ClosetInteractor.swift in Sources */,
 				43BCE9BE27E7EA6900974783 /* AppDelegate.swift in Sources */,
-				43BCE9C027E7EA6900974783 /* SceneDelegate.swift in Sources */,
+				43BCEA2527E7EF2000974783 /* ClosetAssembly.swift in Sources */,
+				43BCEA2C27E7EF2A00974783 /* ClosetPresenter.swift in Sources */,
+				43BCEA0127E7EE0B00974783 /* SplashAssembly.swift in Sources */,
+				43BCE9F927E7EDC900974783 /* SplashRouter.swift in Sources */,
+				43BCE9FB27E7EDC900974783 /* SplashInteractor.swift in Sources */,
+				43BCEA3027E7EF2A00974783 /* ClosetEntity.swift in Sources */,
+				43BCEA2D27E7EF2A00974783 /* ClosetRouter.swift in Sources */,
+				43BCEA1F27E7EEFB00974783 /* DetailsInteractor.swift in Sources */,
+				43BCEA0E27E7EE5C00974783 /* LoginPresenter.swift in Sources */,
+				43BCEA3427E7EFB100974783 /* UIColor+.swift in Sources */,
+				43BCEA2E27E7EF2A00974783 /* ClosetViewController.swift in Sources */,
+				43BCEA2327E7EF1500974783 /* DetailsAssembly.swift in Sources */,
+				43BCE9F827E7EDC900974783 /* SplashPresenter.swift in Sources */,
+				43BCEA2027E7EEFB00974783 /* DetailsEntity.swift in Sources */,
+				43BCEA0427E7EE2900974783 /* ViewControllerFactory.swift in Sources */,
+				43BCE9FA27E7EDC900974783 /* SplashViewController.swift in Sources */,
+				43BCEA0F27E7EE5C00974783 /* LoginRouter.swift in Sources */,
+				43BCEA1E27E7EEFB00974783 /* DetailsViewController.swift in Sources */,
+				43BCEA1127E7EE5C00974783 /* LoginInteractor.swift in Sources */,
+				43BCEA1D27E7EEFB00974783 /* DetailsRouter.swift in Sources */,
+				43BCE9FC27E7EDC900974783 /* SplashEntity.swift in Sources */,
+				43BCEA1227E7EE5C00974783 /* LoginEntity.swift in Sources */,
+				43BCEA0727E7EE3D00974783 /* ViewControllerFactoryAssembly.swift in Sources */,
+				43BCEA1C27E7EEFB00974783 /* DetailsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,14 +638,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		43BCE9C327E7EA6900974783 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43BCE9C427E7EA6900974783 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43BCE9C827E7EA6E00974783 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -588,12 +771,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 668W73UXZQ;
+				DEVELOPMENT_TEAM = 2L9L899V66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cladwell/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -618,12 +801,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 668W73UXZQ;
+				DEVELOPMENT_TEAM = 2L9L899V66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cladwell/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
