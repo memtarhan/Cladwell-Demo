@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43BCE9BE27E7EA6900974783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9BD27E7EA6900974783 /* AppDelegate.swift */; };
+		43BCE9C027E7EA6900974783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9BF27E7EA6900974783 /* SceneDelegate.swift */; };
+		43BCE9C227E7EA6900974783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9C127E7EA6900974783 /* ViewController.swift */; };
+		43BCE9C527E7EA6900974783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9C327E7EA6900974783 /* Main.storyboard */; };
+		43BCE9C727E7EA6E00974783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9C627E7EA6E00974783 /* Assets.xcassets */; };
+		43BCE9CA27E7EA6E00974783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BCE9C827E7EA6E00974783 /* LaunchScreen.storyboard */; };
+		43BCE9D527E7EA6E00974783 /* CladwellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9D427E7EA6E00974783 /* CladwellTests.swift */; };
+		43BCE9DF27E7EA6E00974783 /* CladwellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9DE27E7EA6E00974783 /* CladwellUITests.swift */; };
+		43BCE9E127E7EA6E00974783 /* CladwellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCE9E027E7EA6E00974783 /* CladwellUITestsLaunchTests.swift */; };
+		809C9527A4169C88A48EB866 /* Pods_CladwellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750EC3AFF45783946C4EFFC8 /* Pods_CladwellTests.framework */; };
+		8EEBDDB5FE725592C4EB3E7A /* Pods_Cladwell_CladwellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93B53B710C8E61BDC62644 /* Pods_Cladwell_CladwellUITests.framework */; };
+		B8B4F3C29D1B19FE32A2FE35 /* Pods_Cladwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43BCE9D127E7EA6E00974783 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43BCE9B227E7EA6900974783 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43BCE9B927E7EA6900974783;
+			remoteInfo = Cladwell;
+		};
+		43BCE9DB27E7EA6E00974783 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43BCE9B227E7EA6900974783 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43BCE9B927E7EA6900974783;
+			remoteInfo = Cladwell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F8672F9E3850FC8A305C5B /* Pods-Cladwell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cladwell.debug.xcconfig"; path = "Target Support Files/Pods-Cladwell/Pods-Cladwell.debug.xcconfig"; sourceTree = "<group>"; };
+		22D35CD270D75410DFBA7573 /* Pods-Cladwell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cladwell.release.xcconfig"; path = "Target Support Files/Pods-Cladwell/Pods-Cladwell.release.xcconfig"; sourceTree = "<group>"; };
+		3AB6EE8E31003281991F6012 /* Pods-Cladwell-CladwellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cladwell-CladwellUITests.release.xcconfig"; path = "Target Support Files/Pods-Cladwell-CladwellUITests/Pods-Cladwell-CladwellUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43BCE9BA27E7EA6900974783 /* Cladwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cladwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BCE9BD27E7EA6900974783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43BCE9BF27E7EA6900974783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43BCE9C127E7EA6900974783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43BCE9C427E7EA6900974783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43BCE9C627E7EA6E00974783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43BCE9C927E7EA6E00974783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43BCE9CB27E7EA6E00974783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BCE9D027E7EA6E00974783 /* CladwellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CladwellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BCE9D427E7EA6E00974783 /* CladwellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CladwellTests.swift; sourceTree = "<group>"; };
+		43BCE9DA27E7EA6E00974783 /* CladwellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CladwellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BCE9DE27E7EA6E00974783 /* CladwellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CladwellUITests.swift; sourceTree = "<group>"; };
+		43BCE9E027E7EA6E00974783 /* CladwellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CladwellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.debug.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cladwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.release.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.release.xcconfig"; sourceTree = "<group>"; };
+		750EC3AFF45783946C4EFFC8 /* Pods_CladwellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CladwellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E93B53B710C8E61BDC62644 /* Pods_Cladwell_CladwellUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cladwell_CladwellUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE53CA0AD31126E66AE115E /* Pods-Cladwell-CladwellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cladwell-CladwellUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cladwell-CladwellUITests/Pods-Cladwell-CladwellUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43BCE9B727E7EA6900974783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B4F3C29D1B19FE32A2FE35 /* Pods_Cladwell.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BCE9CD27E7EA6E00974783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809C9527A4169C88A48EB866 /* Pods_CladwellTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BCE9D727E7EA6E00974783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEBDDB5FE725592C4EB3E7A /* Pods_Cladwell_CladwellUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43BCE9B127E7EA6900974783 = {
+			isa = PBXGroup;
+			children = (
+				43BCE9BC27E7EA6900974783 /* Cladwell */,
+				43BCE9D327E7EA6E00974783 /* CladwellTests */,
+				43BCE9DD27E7EA6E00974783 /* CladwellUITests */,
+				43BCE9BB27E7EA6900974783 /* Products */,
+				B937B271797D3F324E55ECB0 /* Pods */,
+				E00ACD133622DB862625CE41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43BCE9BB27E7EA6900974783 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43BCE9BA27E7EA6900974783 /* Cladwell.app */,
+				43BCE9D027E7EA6E00974783 /* CladwellTests.xctest */,
+				43BCE9DA27E7EA6E00974783 /* CladwellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43BCE9BC27E7EA6900974783 /* Cladwell */ = {
+			isa = PBXGroup;
+			children = (
+				43BCE9BD27E7EA6900974783 /* AppDelegate.swift */,
+				43BCE9BF27E7EA6900974783 /* SceneDelegate.swift */,
+				43BCE9C127E7EA6900974783 /* ViewController.swift */,
+				43BCE9C327E7EA6900974783 /* Main.storyboard */,
+				43BCE9C627E7EA6E00974783 /* Assets.xcassets */,
+				43BCE9C827E7EA6E00974783 /* LaunchScreen.storyboard */,
+				43BCE9CB27E7EA6E00974783 /* Info.plist */,
+			);
+			path = Cladwell;
+			sourceTree = "<group>";
+		};
+		43BCE9D327E7EA6E00974783 /* CladwellTests */ = {
+			isa = PBXGroup;
+			children = (
+				43BCE9D427E7EA6E00974783 /* CladwellTests.swift */,
+			);
+			path = CladwellTests;
+			sourceTree = "<group>";
+		};
+		43BCE9DD27E7EA6E00974783 /* CladwellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43BCE9DE27E7EA6E00974783 /* CladwellUITests.swift */,
+				43BCE9E027E7EA6E00974783 /* CladwellUITestsLaunchTests.swift */,
+			);
+			path = CladwellUITests;
+			sourceTree = "<group>";
+		};
+		B937B271797D3F324E55ECB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04F8672F9E3850FC8A305C5B /* Pods-Cladwell.debug.xcconfig */,
+				22D35CD270D75410DFBA7573 /* Pods-Cladwell.release.xcconfig */,
+				FFE53CA0AD31126E66AE115E /* Pods-Cladwell-CladwellUITests.debug.xcconfig */,
+				3AB6EE8E31003281991F6012 /* Pods-Cladwell-CladwellUITests.release.xcconfig */,
+				50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */,
+				741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E00ACD133622DB862625CE41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */,
+				8E93B53B710C8E61BDC62644 /* Pods_Cladwell_CladwellUITests.framework */,
+				750EC3AFF45783946C4EFFC8 /* Pods_CladwellTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43BCE9B927E7EA6900974783 /* Cladwell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43BCE9E427E7EA6E00974783 /* Build configuration list for PBXNativeTarget "Cladwell" */;
+			buildPhases = (
+				6E39810A796B6C40328C9118 /* [CP] Check Pods Manifest.lock */,
+				43BCE9B627E7EA6900974783 /* Sources */,
+				43BCE9B727E7EA6900974783 /* Frameworks */,
+				43BCE9B827E7EA6900974783 /* Resources */,
+				D6E5C16CE88BE3C735C32966 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cladwell;
+			productName = Cladwell;
+			productReference = 43BCE9BA27E7EA6900974783 /* Cladwell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43BCE9CF27E7EA6E00974783 /* CladwellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43BCE9E727E7EA6E00974783 /* Build configuration list for PBXNativeTarget "CladwellTests" */;
+			buildPhases = (
+				39F4E0FB77BC4C5F4C843645 /* [CP] Check Pods Manifest.lock */,
+				43BCE9CC27E7EA6E00974783 /* Sources */,
+				43BCE9CD27E7EA6E00974783 /* Frameworks */,
+				43BCE9CE27E7EA6E00974783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43BCE9D227E7EA6E00974783 /* PBXTargetDependency */,
+			);
+			name = CladwellTests;
+			productName = CladwellTests;
+			productReference = 43BCE9D027E7EA6E00974783 /* CladwellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43BCE9D927E7EA6E00974783 /* CladwellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43BCE9EA27E7EA6E00974783 /* Build configuration list for PBXNativeTarget "CladwellUITests" */;
+			buildPhases = (
+				86CE7FBC8462176EE548A143 /* [CP] Check Pods Manifest.lock */,
+				43BCE9D627E7EA6E00974783 /* Sources */,
+				43BCE9D727E7EA6E00974783 /* Frameworks */,
+				43BCE9D827E7EA6E00974783 /* Resources */,
+				D8D766A783AC46C55FD9649A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43BCE9DC27E7EA6E00974783 /* PBXTargetDependency */,
+			);
+			name = CladwellUITests;
+			productName = CladwellUITests;
+			productReference = 43BCE9DA27E7EA6E00974783 /* CladwellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43BCE9B227E7EA6900974783 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = MEMTARHAN;
+				TargetAttributes = {
+					43BCE9B927E7EA6900974783 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					43BCE9CF27E7EA6E00974783 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 43BCE9B927E7EA6900974783;
+					};
+					43BCE9D927E7EA6E00974783 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 43BCE9B927E7EA6900974783;
+					};
+				};
+			};
+			buildConfigurationList = 43BCE9B527E7EA6900974783 /* Build configuration list for PBXProject "Cladwell" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43BCE9B127E7EA6900974783;
+			productRefGroup = 43BCE9BB27E7EA6900974783 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43BCE9B927E7EA6900974783 /* Cladwell */,
+				43BCE9CF27E7EA6E00974783 /* CladwellTests */,
+				43BCE9D927E7EA6E00974783 /* CladwellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43BCE9B827E7EA6900974783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BCE9CA27E7EA6E00974783 /* LaunchScreen.storyboard in Resources */,
+				43BCE9C727E7EA6E00974783 /* Assets.xcassets in Resources */,
+				43BCE9C527E7EA6900974783 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BCE9CE27E7EA6E00974783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BCE9D827E7EA6E00974783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39F4E0FB77BC4C5F4C843645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CladwellTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E39810A796B6C40328C9118 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cladwell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86CE7FBC8462176EE548A143 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cladwell-CladwellUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E5C16CE88BE3C735C32966 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cladwell/Pods-Cladwell-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cladwell/Pods-Cladwell-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cladwell/Pods-Cladwell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D766A783AC46C55FD9649A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cladwell-CladwellUITests/Pods-Cladwell-CladwellUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cladwell-CladwellUITests/Pods-Cladwell-CladwellUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cladwell-CladwellUITests/Pods-Cladwell-CladwellUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43BCE9B627E7EA6900974783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BCE9C227E7EA6900974783 /* ViewController.swift in Sources */,
+				43BCE9BE27E7EA6900974783 /* AppDelegate.swift in Sources */,
+				43BCE9C027E7EA6900974783 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BCE9CC27E7EA6E00974783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BCE9D527E7EA6E00974783 /* CladwellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BCE9D627E7EA6E00974783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BCE9E127E7EA6E00974783 /* CladwellUITestsLaunchTests.swift in Sources */,
+				43BCE9DF27E7EA6E00974783 /* CladwellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43BCE9D227E7EA6E00974783 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43BCE9B927E7EA6900974783 /* Cladwell */;
+			targetProxy = 43BCE9D127E7EA6E00974783 /* PBXContainerItemProxy */;
+		};
+		43BCE9DC27E7EA6E00974783 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43BCE9B927E7EA6900974783 /* Cladwell */;
+			targetProxy = 43BCE9DB27E7EA6E00974783 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43BCE9C327E7EA6900974783 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43BCE9C427E7EA6900974783 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43BCE9C827E7EA6E00974783 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43BCE9C927E7EA6E00974783 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43BCE9E227E7EA6E00974783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43BCE9E327E7EA6E00974783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43BCE9E527E7EA6E00974783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F8672F9E3850FC8A305C5B /* Pods-Cladwell.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 668W73UXZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cladwell/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MEMTARHAN.Cladwell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43BCE9E627E7EA6E00974783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D35CD270D75410DFBA7573 /* Pods-Cladwell.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 668W73UXZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cladwell/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MEMTARHAN.Cladwell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43BCE9E827E7EA6E00974783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 668W73UXZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MEMTARHAN.CladwellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cladwell.app/Cladwell";
+			};
+			name = Debug;
+		};
+		43BCE9E927E7EA6E00974783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 668W73UXZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MEMTARHAN.CladwellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cladwell.app/Cladwell";
+			};
+			name = Release;
+		};
+		43BCE9EB27E7EA6E00974783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFE53CA0AD31126E66AE115E /* Pods-Cladwell-CladwellUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 668W73UXZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MEMTARHAN.CladwellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cladwell;
+			};
+			name = Debug;
+		};
+		43BCE9EC27E7EA6E00974783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB6EE8E31003281991F6012 /* Pods-Cladwell-CladwellUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 668W73UXZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MEMTARHAN.CladwellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cladwell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43BCE9B527E7EA6900974783 /* Build configuration list for PBXProject "Cladwell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BCE9E227E7EA6E00974783 /* Debug */,
+				43BCE9E327E7EA6E00974783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43BCE9E427E7EA6E00974783 /* Build configuration list for PBXNativeTarget "Cladwell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BCE9E527E7EA6E00974783 /* Debug */,
+				43BCE9E627E7EA6E00974783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43BCE9E727E7EA6E00974783 /* Build configuration list for PBXNativeTarget "CladwellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BCE9E827E7EA6E00974783 /* Debug */,
+				43BCE9E927E7EA6E00974783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43BCE9EA27E7EA6E00974783 /* Build configuration list for PBXNativeTarget "CladwellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BCE9EB27E7EA6E00974783 /* Debug */,
+				43BCE9EC27E7EA6E00974783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43BCE9B227E7EA6900974783 /* Project object */;
+}
