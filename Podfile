@@ -9,6 +9,7 @@ target 'Cladwell' do
 
 pod 'Swinject'
 pod 'Alamofire'
+pod 'Kingfisher'
 
   target 'CladwellTests' do
     inherit! :search_paths

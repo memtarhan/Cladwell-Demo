@@ -34,7 +34,7 @@ class ClosetInteractorImpl: ClosetInteractor {
 
                 do {
                     let closetResponse = try self.decoder.decode(ClosetResponse.self, from: data)
-                    print(closetResponse)
+                    self.presenter?.presentFetched(closet: closetResponse)
                 } catch {
                     // TODO: Display error
                     print(error)

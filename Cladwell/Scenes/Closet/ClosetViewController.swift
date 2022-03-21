@@ -6,6 +6,7 @@
 //  Copyright © 2022 MEMTARHAN. All rights reserved.
 //
 
+import Combine
 import UIKit
 
 protocol ClosetViewController: AnyObject {
@@ -14,6 +15,10 @@ protocol ClosetViewController: AnyObject {
 
 class ClosetViewControllerImpl: UIViewController {
     var presenter: ClosetPresenter?
+
+    @IBOutlet var collectionView: UICollectionView!
+
+    private var cancellables: Set<AnyCancellable> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +38,7 @@ class ClosetViewControllerImpl: UIViewController {
         leftBarButtonItem.tintColor = .neutralBlack
         navigationItem.leftBarButtonItem = leftBarButtonItem
 
+        // TODO: Setup title view with button
         let titleView = UIView()
         titleView.backgroundColor = .white
 
@@ -52,11 +58,57 @@ class ClosetViewControllerImpl: UIViewController {
 
 //        navigationItem.titleView = titleView
 
-        presenter?.present()
+        let cell = UINib(nibName: ItemCollectionViewCell.nibIdentifier, bundle: nil)
+        collectionView.register(cell, forCellWithReuseIdentifier: ItemCollectionViewCell.reuseIdentifier)
+        collectionView.delegate = self
+        
+        presenter?.triggerPublisher
+            .receive(on: RunLoop.main)
+            .sink { _ in
+            }.store(in: &cancellables)
+
+        presenter?.fetchCompletionPublisher
+            .receive(on: RunLoop.main)
+            .sink { result in
+                if result {
+                    self.view.hideLoadingIndicator()
+
+                } else {
+                    self.view.showLoadingIndicator()
+                }
+
+            }.store(in: &cancellables)
+
+        presenter?.diffableDataSource = ItemsCollectionViewDiffableDataSource(collectionView: collectionView) { (collectionView, indexPath, model) -> UICollectionViewCell? in
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.reuseIdentifier, for: indexPath) as? ItemCollectionViewCell
+            else { return UICollectionViewCell() }
+
+            cell.configure(model)
+            return cell
+        }
     }
 }
 
 // MARK: - ClosetViewController
 
 extension ClosetViewControllerImpl: ClosetViewController {
+}
+
+extension ClosetViewControllerImpl: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = collectionView.frame.size
+        return CGSize(width: (size.width / 2), height: size.height / 2.5)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
 }

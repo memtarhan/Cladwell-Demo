@@ -6,6 +6,7 @@
 //  Copyright © 2022 MEMTARHAN. All rights reserved.
 //
 
+import Combine
 import UIKit
 
 protocol ClosetPresenter: AnyObject {
@@ -13,9 +14,13 @@ protocol ClosetPresenter: AnyObject {
     var interactor: ClosetInteractor? { get set }
     var router: ClosetRouter? { get set }
 
-    func present()
+    var triggerPublisher: Published<Bool>.Publisher { get }
+    var fetchCompletionPublisher: Published<Bool>.Publisher { get }
+    var diffableDataSource: ItemsCollectionViewDiffableDataSource? { get set }
+
     func presentLogOut()
     func presentLoggedOut()
+    func presentFetched(closet: ClosetResponse)
 }
 
 class ClosetPresenterImpl: ClosetPresenter {
@@ -23,8 +28,24 @@ class ClosetPresenterImpl: ClosetPresenter {
     var interactor: ClosetInteractor?
     var router: ClosetRouter?
 
-    func present() {
-        interactor?.retrieveCloset()
+    private var cancellables: Set<AnyCancellable> = []
+    @Published var trigger: Bool = false
+    var triggerPublisher: Published<Bool>.Publisher { $trigger }
+
+    @Published var fetched: Bool = false
+    var fetchCompletionPublisher: Published<Bool>.Publisher { $fetched }
+    var diffableDataSource: ItemsCollectionViewDiffableDataSource?
+    var snapshot = NSDiffableDataSourceSnapshot<String?, ClosetEntity.Item.ViewModel>()
+
+    init() {
+        triggerPublisher.receive(on: RunLoop.main).debounce(for: .seconds(0.0), scheduler: RunLoop.main)
+            .sink { _ in
+                self.fetchCloset()
+            }.store(in: &cancellables)
+
+        fetchCompletionPublisher.receive(on: RunLoop.main).debounce(for: .seconds(0.0), scheduler: RunLoop.main)
+            .sink { _ in
+            }.store(in: &cancellables)
     }
 
     func presentLogOut() {
@@ -33,5 +54,26 @@ class ClosetPresenterImpl: ClosetPresenter {
 
     func presentLoggedOut() {
         router?.navigateToSplash()
+    }
+
+    func presentFetched(closet: ClosetResponse) {
+        fetched = true
+        snapshot.deleteAllItems()
+        snapshot.appendSections([""])
+
+        if closet.items.isEmpty {
+            diffableDataSource?.apply(snapshot, animatingDifferences: true)
+            return
+        }
+
+        let viewModels = closet.items.map { item -> ClosetEntity.Item.ViewModel in
+            ClosetEntity.Item.ViewModel(id: item.id, name: item.name, image: item.image)
+        }
+        snapshot.appendItems(viewModels, toSection: "")
+        diffableDataSource?.apply(snapshot, animatingDifferences: true)
+    }
+
+    private func fetchCloset() {
+        interactor?.retrieveCloset()
     }
 }
