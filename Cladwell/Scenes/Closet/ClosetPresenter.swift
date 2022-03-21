@@ -13,6 +13,7 @@ protocol ClosetPresenter: AnyObject {
     var interactor: ClosetInteractor? { get set }
     var router: ClosetRouter? { get set }
 
+    func present()
     func presentLogOut()
     func presentLoggedOut()
 }
@@ -21,11 +22,15 @@ class ClosetPresenterImpl: ClosetPresenter {
     var view: ClosetViewController?
     var interactor: ClosetInteractor?
     var router: ClosetRouter?
-    
+
+    func present() {
+        interactor?.retrieveCloset()
+    }
+
     func presentLogOut() {
         interactor?.logOut()
     }
-    
+
     func presentLoggedOut() {
         router?.navigateToSplash()
     }

@@ -42,7 +42,3 @@ class LoginInteractorImpl: LoginInteractor {
 }
 
 extension LoginInteractorImpl: APICallable { }
-
-struct LoginResponse: Codable {
-    let token: String
-}

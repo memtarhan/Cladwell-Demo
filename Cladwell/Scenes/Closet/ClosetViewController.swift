@@ -51,6 +51,8 @@ class ClosetViewControllerImpl: UIViewController {
         titleView.makeCircle()
 
 //        navigationItem.titleView = titleView
+
+        presenter?.present()
     }
 }
 
