@@ -19,6 +19,6 @@ class SplashInteractorImpl: SplashInteractor {
 
     var isLoggedIn: Bool {
         // TODO: Implement actual check func.
-        return true
+        return false
     }
 }
