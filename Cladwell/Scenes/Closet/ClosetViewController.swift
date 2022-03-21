@@ -20,6 +20,8 @@ class ClosetViewControllerImpl: UIViewController {
 
     private var cancellables: Set<AnyCancellable> = []
 
+    private var rightBarButtonItem: UIBarButtonItem?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -29,6 +31,9 @@ class ClosetViewControllerImpl: UIViewController {
 
     @objc private func didTapLogOut(_ sender: UIBarButtonItem) {
         presenter?.presentLogOut()
+    }
+
+    @objc private func didTapCapsule(_ sender: UIBarButtonItem) {
     }
 
     private func setup() {
@@ -42,7 +47,11 @@ class ClosetViewControllerImpl: UIViewController {
         backBarButtonItem.tintColor = .neutralBlack
         navigationItem.backBarButtonItem = backBarButtonItem
 
-        // TODO: Setup title view with button
+        rightBarButtonItem = UIBarButtonItem(title: "", style: .done, target: self, action: #selector(didTapCapsule(_:)))
+        rightBarButtonItem?.tintColor = .neutralBlack
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+
+        // TODO: Setup title view with button // - No time :(
         let titleView = UIView()
         titleView.backgroundColor = .white
 
@@ -80,6 +89,14 @@ class ClosetViewControllerImpl: UIViewController {
                 } else {
                     self.view.showLoadingIndicator()
                 }
+
+            }.store(in: &cancellables)
+
+        presenter?.capsulesCompletionPublisher
+            .receive(on: RunLoop.main)
+            .sink { capsules in
+                print(capsules)
+                self.rightBarButtonItem?.title = capsules.first?.name
 
             }.store(in: &cancellables)
 

@@ -16,6 +16,7 @@ protocol ClosetPresenter: AnyObject {
 
     var triggerPublisher: Published<Bool>.Publisher { get }
     var fetchCompletionPublisher: Published<Bool>.Publisher { get }
+    var capsulesCompletionPublisher: Published<[CapsuleResponse]>.Publisher { get }
     var diffableDataSource: ItemsCollectionViewDiffableDataSource? { get set }
 
     func presentLogOut()
@@ -34,7 +35,9 @@ class ClosetPresenterImpl: ClosetPresenter {
     var triggerPublisher: Published<Bool>.Publisher { $trigger }
 
     @Published var fetched: Bool = false
+    @Published var capsules: [CapsuleResponse] = []
     var fetchCompletionPublisher: Published<Bool>.Publisher { $fetched }
+    var capsulesCompletionPublisher: Published<[CapsuleResponse]>.Publisher { $capsules }
     var diffableDataSource: ItemsCollectionViewDiffableDataSource?
     var snapshot = NSDiffableDataSourceSnapshot<String?, ClosetEntity.Item.ViewModel>()
 
@@ -45,6 +48,10 @@ class ClosetPresenterImpl: ClosetPresenter {
             }.store(in: &cancellables)
 
         fetchCompletionPublisher.receive(on: RunLoop.main).debounce(for: .seconds(0.0), scheduler: RunLoop.main)
+            .sink { _ in
+            }.store(in: &cancellables)
+
+        capsulesCompletionPublisher.receive(on: RunLoop.main).debounce(for: .seconds(0.0), scheduler: RunLoop.main)
             .sink { _ in
             }.store(in: &cancellables)
     }
@@ -59,6 +66,7 @@ class ClosetPresenterImpl: ClosetPresenter {
 
     func presentFetched(closet: ClosetResponse) {
         fetched = true
+        capsules = closet.capsules
         snapshot.deleteAllItems()
         snapshot.appendSections([""])
 
