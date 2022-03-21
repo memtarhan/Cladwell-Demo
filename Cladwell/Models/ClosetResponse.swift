@@ -36,8 +36,7 @@ struct ItemResponse: Codable {
     let id: Int?
     let name: String?
     let image: String?
-//    let style: Style
-//    let stats: ItemStatsResponse
+    let userDetail: UserDetailResponse?
 }
 
 // MARK: - ItemStats
@@ -56,4 +55,8 @@ struct OutfitCountsResponse: Codable {
         case closet
         case work235 = "work-235"
     }
+}
+
+struct UserDetailResponse: Codable {
+    var loveFactor: Int?
 }

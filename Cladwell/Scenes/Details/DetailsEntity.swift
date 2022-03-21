@@ -9,4 +9,10 @@
 import UIKit
 
 struct DetailsEntity {
+    struct Item {
+        struct ViewModel {
+            let name: String
+            let image: URL
+        }
+    }
 }

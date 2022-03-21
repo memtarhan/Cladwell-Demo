@@ -16,6 +16,8 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
 
+    var item: ClosetEntity.Item.ViewModel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

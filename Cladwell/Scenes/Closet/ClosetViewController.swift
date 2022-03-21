@@ -42,8 +42,6 @@ class ClosetViewControllerImpl: UIViewController {
         backBarButtonItem.tintColor = .neutralBlack
         navigationItem.backBarButtonItem = backBarButtonItem
 
-       
-        
         // TODO: Setup title view with button
         let titleView = UIView()
         titleView.backgroundColor = .white
@@ -104,7 +102,9 @@ extension ClosetViewControllerImpl: ClosetViewController {
 
 extension ClosetViewControllerImpl: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.presentDetails()
+        guard let item = presenter?.diffableDataSource?.itemIdentifier(for: indexPath),
+              let id = item.id else { return }
+        presenter?.presentDetails(for: id)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

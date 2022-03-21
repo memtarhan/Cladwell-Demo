@@ -12,7 +12,7 @@ protocol ClosetRouter: AnyObject {
     var view: ClosetViewController? { get set }
 
     func navigateToSplash()
-    func navigateToDetails()
+    func navigateToDetails(for item: Int)
 }
 
 class ClosetRouterImpl: ClosetRouter {
@@ -30,9 +30,11 @@ class ClosetRouterImpl: ClosetRouter {
         present(destination: destination, from: source)
     }
 
-    func navigateToDetails() {
+    func navigateToDetails(for item: Int) {
+        let details = factory.details
+        details.itemId = item
         guard let source = view as? UIViewController,
-              let destination = factory.details as? UIViewController else { return }
+              let destination = details as? UIViewController else { return }
         push(destination: destination, from: source)
     }
 }
