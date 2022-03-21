@@ -10,6 +10,8 @@ import UIKit
 
 protocol LoginRouter: AnyObject {
     var view: LoginViewController? { get set }
+
+    func navigateToCloset()
 }
 
 class LoginRouterImpl: LoginRouter {
@@ -19,5 +21,11 @@ class LoginRouterImpl: LoginRouter {
 
     init(factory: ViewControllerFactory) {
         self.factory = factory
+    }
+
+    func navigateToCloset() {
+        guard let source = view as? UIViewController,
+              let destination = factory.closet as? UIViewController else { return }
+        presentNavigation(destination: destination, from: source)
     }
 }

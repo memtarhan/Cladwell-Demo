@@ -9,4 +9,10 @@
 import UIKit
 
 struct LoginEntity {
+    struct Error {
+        struct ViewModel {
+            let title: String
+            let message: String
+        }
+    }
 }

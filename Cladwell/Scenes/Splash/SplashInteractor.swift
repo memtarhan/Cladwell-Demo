@@ -18,7 +18,6 @@ class SplashInteractorImpl: SplashInteractor {
     var presenter: SplashPresenter?
 
     var isLoggedIn: Bool {
-        // TODO: Implement actual check func.
-        return false
+        return UserDefaults.standard.bool(forKey: UserDefaultKey.isLoggedIn)
     }
 }

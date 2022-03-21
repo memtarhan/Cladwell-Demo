@@ -10,6 +10,9 @@ import UIKit
 
 protocol LoginViewController: AnyObject {
     var presenter: LoginPresenter? { get set }
+
+    func display(_ error: LoginEntity.Error.ViewModel)
+    func stopLoadingIndicator()
 }
 
 class LoginViewControllerImpl: UIViewController {
@@ -28,6 +31,8 @@ class LoginViewControllerImpl: UIViewController {
 
     @IBAction func didTapLogin(_ sender: UIButton) {
         view.showLoadingIndicator()
+        view.endEditing(true)
+        presenter?.present(email: emailAddressTextField.text, password: passwordTextField.text)
     }
 
     private func setup() {
@@ -54,4 +59,19 @@ class LoginViewControllerImpl: UIViewController {
 // MARK: - LoginViewController
 
 extension LoginViewControllerImpl: LoginViewController {
+    func display(_ error: LoginEntity.Error.ViewModel) {
+        view.hideLoadingIndicator()
+
+        let alertController = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel)
+        alertController.addAction(okAction)
+
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true)
+        }
+    }
+
+    func stopLoadingIndicator() {
+        view.hideLoadingIndicator()
+    }
 }
