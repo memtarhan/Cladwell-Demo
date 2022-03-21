@@ -27,6 +27,7 @@ class LoginViewControllerImpl: UIViewController {
     }
 
     @IBAction func didTapLogin(_ sender: UIButton) {
+        view.showLoadingIndicator()
     }
 
     private func setup() {

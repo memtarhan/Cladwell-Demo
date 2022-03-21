@@ -48,6 +48,7 @@
 		43BCEA3A27E7F60E00974783 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA3927E7F60E00974783 /* UIView+.swift */; };
 		43BCEA3F27E7F6D000974783 /* NewYorkLargeRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43BCEA3E27E7F6D000974783 /* NewYorkLargeRegular.otf */; };
 		43BCEA4127E7F78E00974783 /* TextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA4027E7F78E00974783 /* TextFieldContainer.swift */; };
+		43BCEA4727E806B800974783 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCEA4627E806B800974783 /* Spinner.swift */; };
 		809C9527A4169C88A48EB866 /* Pods_CladwellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750EC3AFF45783946C4EFFC8 /* Pods_CladwellTests.framework */; };
 		8EEBDDB5FE725592C4EB3E7A /* Pods_Cladwell_CladwellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93B53B710C8E61BDC62644 /* Pods_Cladwell_CladwellUITests.framework */; };
 		B8B4F3C29D1B19FE32A2FE35 /* Pods_Cladwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */; };
@@ -119,6 +120,7 @@
 		43BCEA3927E7F60E00974783 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		43BCEA3E27E7F6D000974783 /* NewYorkLargeRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewYorkLargeRegular.otf; sourceTree = "<group>"; };
 		43BCEA4027E7F78E00974783 /* TextFieldContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContainer.swift; sourceTree = "<group>"; };
+		43BCEA4627E806B800974783 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		50420E9880C62B4B20C37C45 /* Pods-CladwellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.debug.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53F789B6286312EF6A0C6CB0 /* Pods_Cladwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cladwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741982FCB8FB5D8BB0BCB757 /* Pods-CladwellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CladwellTests.release.xcconfig"; path = "Target Support Files/Pods-CladwellTests/Pods-CladwellTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -296,9 +298,10 @@
 		43BCEA0227E7EE1F00974783 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				43BCEA0327E7EE2900974783 /* ViewControllerFactory.swift */,
 				43BCEA3527E7F27900974783 /* Router.swift */,
+				43BCEA4627E806B800974783 /* Spinner.swift */,
 				43BCEA4027E7F78E00974783 /* TextFieldContainer.swift */,
+				43BCEA0327E7EE2900974783 /* ViewControllerFactory.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				43BCEA2527E7EF2000974783 /* ClosetAssembly.swift in Sources */,
 				43BCEA2C27E7EF2A00974783 /* ClosetPresenter.swift in Sources */,
 				43BCEA0127E7EE0B00974783 /* SplashAssembly.swift in Sources */,
+				43BCEA4727E806B800974783 /* Spinner.swift in Sources */,
 				43BCE9F927E7EDC900974783 /* SplashRouter.swift in Sources */,
 				43BCE9FB27E7EDC900974783 /* SplashInteractor.swift in Sources */,
 				43BCEA3027E7EF2A00974783 /* ClosetEntity.swift in Sources */,

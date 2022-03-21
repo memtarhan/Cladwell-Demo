@@ -11,4 +11,6 @@ import UIKit
 extension UIColor {
     open class var accent: UIColor? { UIColor(named: "AccentColor") }
     open class var background: UIColor? { UIColor(named: "BackgroundColor") }
+    open class var backgroundWithOpacity: UIColor? { return UIColor(named: "BackgroundWithOpacityColor") }
+
 }
