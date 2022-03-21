@@ -38,6 +38,12 @@ class ClosetViewControllerImpl: UIViewController {
         leftBarButtonItem.tintColor = .neutralBlack
         navigationItem.leftBarButtonItem = leftBarButtonItem
 
+        let backBarButtonItem = UIBarButtonItem(image: UIImage(named: ""), style: .plain, target: self, action: nil)
+        backBarButtonItem.tintColor = .neutralBlack
+        navigationItem.backBarButtonItem = backBarButtonItem
+
+       
+        
         // TODO: Setup title view with button
         let titleView = UIView()
         titleView.backgroundColor = .white
@@ -61,7 +67,7 @@ class ClosetViewControllerImpl: UIViewController {
         let cell = UINib(nibName: ItemCollectionViewCell.nibIdentifier, bundle: nil)
         collectionView.register(cell, forCellWithReuseIdentifier: ItemCollectionViewCell.reuseIdentifier)
         collectionView.delegate = self
-        
+
         presenter?.triggerPublisher
             .receive(on: RunLoop.main)
             .sink { _ in
@@ -94,14 +100,20 @@ class ClosetViewControllerImpl: UIViewController {
 extension ClosetViewControllerImpl: ClosetViewController {
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
+
 extension ClosetViewControllerImpl: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.presentDetails()
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = collectionView.frame.size
-        return CGSize(width: (size.width / 2), height: size.height / 2.5)
+        return CGSize(width: size.width / 2, height: size.height / 2.5)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

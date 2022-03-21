@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initWindow()
         initDI()
         initUI()
-        initNavigationBar()
         return true
     }
 
@@ -52,13 +51,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// - Initializing UI w/ initial view controller
     func initUI() {
         rootViewController = assembler?.resolver.resolve(SplashViewController.self) as? UIViewController
-    }
-
-    /// - Initializing UINavigationBar
-    private func initNavigationBar() {
-//        let appearance = UINavigationBar.appearance()
-//        appearance.shadowImage = UIImage()
-//        appearance.setBackgroundImage(UIImage(), for: .default)
-//        appearance.backgroundColor = .accent
     }
 }

@@ -20,15 +20,7 @@ class DetailsViewControllerImpl: UIViewController {
         setup()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        localize()
-    }
-
     private func setup() {
-    }
-
-    private func localize() {
     }
 }
 

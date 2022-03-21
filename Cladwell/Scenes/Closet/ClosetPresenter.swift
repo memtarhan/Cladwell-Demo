@@ -21,6 +21,7 @@ protocol ClosetPresenter: AnyObject {
     func presentLogOut()
     func presentLoggedOut()
     func presentFetched(closet: ClosetResponse)
+    func presentDetails()
 }
 
 class ClosetPresenterImpl: ClosetPresenter {
@@ -71,6 +72,10 @@ class ClosetPresenterImpl: ClosetPresenter {
         }
         snapshot.appendItems(viewModels, toSection: "")
         diffableDataSource?.apply(snapshot, animatingDifferences: true)
+    }
+
+    func presentDetails() {
+        router?.navigateToDetails()
     }
 
     private func fetchCloset() {

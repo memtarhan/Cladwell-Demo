@@ -22,3 +22,7 @@ func presentNavigation(destination: UIViewController, from source: UIViewControl
 
     source.present(navigationController, animated: true)
 }
+
+func push(destination: UIViewController, from source: UIViewController) {
+    source.navigationController?.pushViewController(destination, animated: true)
+}
