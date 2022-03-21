@@ -12,10 +12,21 @@ protocol ClosetPresenter: AnyObject {
     var view: ClosetViewController? { get set }
     var interactor: ClosetInteractor? { get set }
     var router: ClosetRouter? { get set }
+
+    func presentLogOut()
+    func presentLoggedOut()
 }
 
 class ClosetPresenterImpl: ClosetPresenter {
     var view: ClosetViewController?
     var interactor: ClosetInteractor?
     var router: ClosetRouter?
+    
+    func presentLogOut() {
+        interactor?.logOut()
+    }
+    
+    func presentLoggedOut() {
+        router?.navigateToSplash()
+    }
 }

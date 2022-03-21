@@ -56,9 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// - Initializing UINavigationBar
     private func initNavigationBar() {
-        let appearance = UINavigationBar.appearance()
-        appearance.shadowImage = UIImage()
-        appearance.setBackgroundImage(UIImage(), for: .default)
-        appearance.backgroundColor = .accent
+//        let appearance = UINavigationBar.appearance()
+//        appearance.shadowImage = UIImage()
+//        appearance.setBackgroundImage(UIImage(), for: .default)
+//        appearance.backgroundColor = .accent
     }
 }
